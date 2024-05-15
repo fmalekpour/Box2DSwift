@@ -45,7 +45,7 @@ open class b2ContactFilter {
   public init(){}
   /// Return true if contact calculations should be performed between these two shapes.
   /// @warning for performance reasons this is only called when the AABBs begin to overlap.
-  public func shouldCollide(_ fixtureA: b2Fixture, _ fixtureB: b2Fixture) -> Bool {
+  open func shouldCollide(_ fixtureA: b2Fixture, _ fixtureB: b2Fixture) -> Bool {
     let filterA = fixtureA.filterData
     let filterB = fixtureB.filterData
     
